@@ -11,6 +11,9 @@ import OrderDetail from "./components/listers/OrderDetail"
 import ShippingManager from "./components/listers/ShippingCards"
 import ShippingDetail from "./components/listers/ShippingDetail"
 
+import InventoryManager from "./components/listers/InventoryCards"
+import InventoryDetail from "./components/listers/InventoryDetail"
+
 
 export default new Router({
     // mode: 'history',
@@ -36,6 +39,17 @@ export default new Router({
                 path: '/shippings/:id',
                 name: 'ShippingDetail',
                 component: ShippingDetail
+            },
+
+            {
+                path: '/inventories',
+                name: 'InventoryManager',
+                component: InventoryManager
+            },
+            {
+                path: '/inventories/:id',
+                name: 'InventoryDetail',
+                component: InventoryDetail
             },
 
 
